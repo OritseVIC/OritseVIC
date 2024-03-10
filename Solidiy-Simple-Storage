@@ -1,1 +1,44 @@
+//SPDX-License-Identifier: MIT
+pragma solidity >= 0.7.0 < 0.9.0;
+
+contract SimpleStorage{
+//Types: boolean, uint, int, address and bytes
+//Types define different variables; Variables are essentially holders for different values, and these values can have one of these data types
+//1. boolean = [true or false type]; 
+//2. uint [unsigned positive whole numbers or integers; meaning they cannot be a decimal or negative], 
+//3. int [signed whole numbers or integers; meaning they can either be positive or negative]
+//4. address [exactly the address of your wallet]
+//5. bytes [measurement of data storage]
+//6. bits [measurement of speed]
+//7. string [text type defining variable]]
+
+
+
+//So hasFavoriteNumber is a variable holding the favorite number that someone has; 
+//the bool type preceding hasFavoriteNumber represents whether the user has a favorite number or not (i.e, true or false condition)
+//consequently, the statement: [bool hasFavoriteNumber = true;] means hasFavoriteNumber is a variable that represents true, and implies that
+//the user has a favorite number, but if [bool hasFavoriteNumber = false;], it implies that the user doesn't have a favorite number
+
+    bool hasFavoriteNumber = true; 
+
+    uint256 favoriteNumber = 88; // that this unsigned (or positive whole) number 88, which is the user's favoriteNumber is equal to 256 bytes
+    int256 favoriteInt = 88; //a signed (either positive or negative whole) number 88
+    string favoriteNumberInText = "eighty-eight"; //strings are bytes object type for text
+    address myAddress = 0xEB1499075e0D95e64A62a155f6FE00Afb11C8765;
+    bytes32 favoriteByte32s = "Cat"; 
+}
+
+//What if we want to create a contract that helps us store our favoriteNumber and the favoriteNumbers of others
+
+contract SimpleStorage2{
+
+   // uint256 favoriteNumber = 5; //Although we have initilaized this 'favoriteNumber' variable to 5, [uint256 favoriteNumber;] can be written without initializing it 
+//Its automatic value by default is thus 0 [zero].Therefore writing it without initializing it any value is the same as [uint256 favoriteNumber = 0;]
+
+//Here we write our favoriteNumber without initializing it for now
+    uint256 favoriteNumber;
+}
+
+
+
 
